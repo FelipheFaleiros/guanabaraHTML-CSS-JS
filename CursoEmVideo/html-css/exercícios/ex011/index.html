@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Midas em HTML 5</title>
+</head>
+<body>
+	<h1>Imagens Dinâmicas</h1>
+	<p>Tente abrir esse site em vários dispositivos diferêntes ou simplesmente aumente e diminua o tamanho do seu navegador </p>
+	<picture>
+		<source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+		<source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+		<img src="imagens/foto-g.png" alt="Imagem Flexível">
+	</picture>
+
+	<h1>Reproduzindo Áudio </h1>
+	<p>Vamos aprender a reproduzir áudios em HTML5.</p>
+	<p>Rap Meliodas</p>
+	<audio src="midia/rap-meliodas.mp3" controls autoplay></audio>
+	 <!--MP3 WAV OGG-->
+	<p>Rap Escanor</p>
+	 <audio preload="metadata" autoplay controls loop>
+		<source src="midia/rap-escanor.mp3" type="audio/mpeg"> 
+		<source src="midia/rap-escanor.ogg" type="audio/ogg"> 
+		<source src="midia/rap-escanor.wav" type="audio/wav"> 
+		<p> Infelizmente seu navegador não consegui reproduzir áudio. <a href="../../rap-escanor.mp3"> Clique aqui para baixar o arquivo</a> </p>
+		<!--ele ira tentar reproduzir o mp3 depois o ogg depois wav em ultimo caso caso o navegador não suporte a reprodução de áudio a possibilidade do download	-->
+		</audio>
+</body>
+</html> 
